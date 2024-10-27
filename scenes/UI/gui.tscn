@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhgk4j3irvwcy"]
+
+[ext_resource type="Script" path="res://scripts/ui_scripts/gui.gd" id="1_1ywia"]
+[ext_resource type="Texture2D" uid="uid://b5xib0recw61o" path="res://assets/HeartSpriteSheet.png" id="1_66b1h"]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_1ywia")
+
+[node name="heart" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("1_66b1h")
+hframes = 5
+
+[node name="gem" type="Label" parent="."]
+offset_left = 1000.0
+offset_top = 8.0
+offset_right = 1072.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 32
+text = "Gem"
+
+[node name="gem_amount" type="Label" parent="."]
+offset_left = 1096.0
+offset_top = 8.0
+offset_right = 1136.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 32

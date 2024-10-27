@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7lgx1ty00wit"]
+
+[ext_resource type="Script" path="res://scripts/ui_scripts/main_menu.tres.gd" id="1_vlpsk"]
+
+[node name="main_menu" type="Node2D"]
+script = ExtResource("1_vlpsk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 304.0
+offset_top = 192.0
+offset_right = 796.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 60
+text = "Pirate Adventure"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 456.0
+offset_top = 392.0
+offset_right = 643.0
+offset_bottom = 449.0
+theme_override_font_sizes/font_size = 35
+text = "Play Game"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

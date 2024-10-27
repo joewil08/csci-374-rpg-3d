@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://osqarg4feb40"]
+
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_nod65"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_nod65")
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="Audio"]
+
+[node name="SoundFX" type="AudioStreamPlayer" parent="Audio"]
+volume_db = -20.0
